@@ -1,11 +1,19 @@
 // webpack.config.js
-var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const env = require('yargs').argv.env
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+if (env === 'build') {
+    mode = 'production';
+  } else {
+    mode = 'development';
+}
 
 module.exports = {
-  entry: './index.js',
+    mode,
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
