@@ -4,10 +4,18 @@
   "description": "Okra Icon for Okra UI",
   "main": "index.js",
   "scripts": {
+    "start":"webpack --watch",
+    "build":"webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Okra",
   "license": "ISC",
+  "keywords": [
+    "okra dash",
+    "okra web",
+    "icons",
+    "svg"
+  ],
   "dependencies": {
     "react": "^16.12.0",
     "webpack": "^4.41.5"
