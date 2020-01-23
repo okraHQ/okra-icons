@@ -6,7 +6,7 @@ const eslint = require('gulp-eslint');
 gulp.task('build', async () => {
    gulp.src(['src/./*.js','src/icons/*.js'])
       .pipe(babel())
-      .pipe(gulp.dest(['dist']))
+      .pipe(gulp.dest(['svg']))
 });
 
 gulp.task('watch', async () => {

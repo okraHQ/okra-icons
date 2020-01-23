@@ -23,19 +23,17 @@ You can use path imports to avoid pulling in unused modules. For instance, use:
 
 ```jsx
     // 🚀 Fast
-    import AccountIcon from 'okra-icon/svg/AccountIcon';
-    import TeamIcon from 'okra-icon/svg/TeamIcon';
+    import AccountIcon from 'okra-icons/svg/AccountIcon';
+    import TeamIcon from 'okra-icons/svg/TeamIcon';
 ```
 
 instead of top level imports:
 
 ```jsx
-    import { AccountIcon } from 'okra-icon/svg';
+    import { AccountIcon } from 'okra-icons/svg';
 ```
 
 ```jsx
-    import AccountIcon from 'okra-icon';
-
     <AccountIcon
         style = {}
         fill = "red"
@@ -44,7 +42,6 @@ instead of top level imports:
         className = "" 
         viewBox = "0 0 25.222 23.013"
     />
-
 ```
 
 ## Documentation
