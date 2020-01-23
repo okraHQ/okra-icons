@@ -4,7 +4,7 @@
   "description": "Okra Icon for Okra UI",
   "license": "MIT",
   "repository": "okraHQ/okra-icons",
-  "main": "dist/index.js",
+  "main": "svg/index.js",
   "author": {
     "name": "Okra, Inc.",
     "email": "dev@okra.nf",
@@ -12,7 +12,7 @@
   },
   "files": [
     "dist",
-    "src"
+    "README.md"
   ],
   "scripts": {
     "start": "gulp start --env dev",
