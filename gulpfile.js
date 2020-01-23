@@ -10,7 +10,7 @@ gulp.task('build', async () => {
 });
 
 gulp.task('watch', async () => {
-    if(env === 'dev') gulp.watch('./*.js', gulp.series('build'));
+    if(env === 'dev') gulp.watch('./*.js', gulp.series('lint','build'));
 });
 
 gulp.task('lint', function () {
